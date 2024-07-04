@@ -1,0 +1,168 @@
+/* starting the css */
+body {
+    font-family: Helvetica, sans-serif; /* font of the pages      */
+    padding: 0; /* default the padding */
+    background-color: lightblue; /* sets the background color */
+}
+
+.wrapper {
+    margin: auto; /* Centers the wrapper of the page */
+    width: 800px; /* Sets width  */
+    background-color: blue; /* Sets background color */
+    outline: 4px solid black; /* New outline for whole  page*/
+}
+
+header {
+    color: black;
+    position: relative;
+    text-align: center; /* text will bethe center */
+}
+
+header img {
+    width: 100%; /* make image width to 100% */
+    height: 400px; /* makes the image height to 400px */
+}
+
+header h1 {
+    position: absolute; /* Positions the element absolutely */
+    bottom: -40px; /* makes the distance from the bottom */
+    left: 55%; /* makes a distance from the left */
+    transform: translate(-70%, -70%); /* changes or translates the element */
+    color: black; /* makes a text color */
+    font-size: 3em; /* makes a font size */
+    text-shadow: 1px 1px 3px rgba(1, 0, 3, 1); /* Adds the test shawow */
+    padding: 30px;
+}
+
+nav {
+    padding: 40px; /* Adds  a padding */
+}
+
+nav ul {
+    list-style-type: none; /* Removes default list type */
+    text-align: center;
+    display: flex; /* makes or display the flexbox for layout */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+nav ul li {
+    display: inline; /* Displays list items in inlines */
+    margin: auto; /* automatically Centers list items */
+    font-weight: bold; /* Makes the text bold */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* makes text color */
+    font-size: 1.4em; /* makes a font size */
+    padding: 10px;
+    display: inline-block; /* show a inline-block */
+    position: relative; /*  positioning of pseudo-elements */
+}
+
+nav ul li:not(:last-child) a::after {
+    content: '|'; /* Adds a pipe character in each links except the last */
+    position: absolute;
+    right: -70px;
+    bottom: 1;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underlines the text on hov */
+}
+
+article {
+    padding: 35px;
+    text-align: justify;      /* explains the text */
+    margin: 20px auto;        /* makes a margin and centers the article */
+    line-height: 1.6;        /* makes a line height */
+}
+
+article p {
+    font-weight: bold;    
+    color: black;      
+    size: 1;            
+}
+
+.article-image {
+    float: left;               /* Floats the image in the left */
+    margin: 0 15px 15px 0;    /* makes margin */
+    width: 300px;            /* makes image width to 300px */
+    height: 300px;          /* makes image height to 300px*/
+}
+
+section {
+    padding: 20px;          
+    margin: 20px auto;       /* makes a margin and centers the section */
+    line-height: 1.6;       /* makes a line height */
+}
+
+
+section ul {
+    list-style-type: disc; /* makes a list style to disc */
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+form {
+    padding: 5px;
+    display: flex;
+    flex-direction: column; /* makes  flex direction to column */
+    gap: 10px; /* makes gap between flex items */
+    border: 1px solid black; /* makes a border black */
+    background-color: #e6f7f7; /* makes a background color */
+}
+
+form label {
+    font-weight: bold; /* Makes text bold */
+}
+
+form input, form textarea {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+form textarea {
+    height: 75px; /* makes a height to 75px */
+}
+
+.radio-buttons {
+    margin-top: 10px; /* make a  margin to the top */
+}
+
+.radio-buttons label {
+    display: inline; /* show a  labels inline */
+    font-weight: bold; /* Makes text bold */
+    margin-bottom: 10px;
+}
+
+.radio-buttons input[type="radio"] {
+    margin-right: auto; /* Adds margin to the right */
+}
+
+form button {
+    width: 55px; /* makes a  button width to 55px */
+    height: 30px; /* makes a button height to 30px*/
+    font-size: 0.9em; /* makes a font size */
+    background-color: white; /* change a  background color */
+    color: lightcoral; /* changes text color */
+    border: 1px solid black; /*makes a  border */
+    cursor: pointer; /* Changes a cursor to pointer */
+    color: red; /* makes a  text color */
+}
+
+form button:hover {
+    background-color: blue; /* Change a background color on a hover */
+}
+
+footer {
+    text-align: right; /* Aligns text to the right */
+    position: relative; /* Allows positioning of child elements */
+    padding: 10px;
+    margin: 5px;
+    bottom: 20px; /* makes a distance from the bottom */
+    font-weight: bold;
+}
